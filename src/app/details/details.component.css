@@ -1,0 +1,42 @@
+.container{
+  width: 100vw;
+  height: 10vh;
+  background-color: #6495ED;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left{
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+}
+
+.right{
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  color: white;
+  margin-left: 2rem;
+  height: 40px;
+  width: 40px;
+  font-size:40px;
+}
+
+.menu{
+  color: white;
+  margin-right: 2rem;
+}
+
+.profile{
+  color: white;
+  margin-right: 1rem;
+  height: 30px;
+  width: 30px;
+  font-size:35px;
+
+}

@@ -1,0 +1,80 @@
+.container{
+    width:100%;
+    height:100%;
+
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items:center;
+}
+
+.left{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.top{
+  height: 40%;
+  width: 100%;
+}
+
+.top mat-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dets{
+  margin-left: 2rem;
+ /* padding: 0.5rem 1rem; */
+  width: 49%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.dets p{
+  margin-left: 1rem;
+  text-align: left;
+}
+#MFRchart{
+  width: 49%;
+  height: 100%;
+}
+
+
+.bottom{
+  height: 58%;
+  width: 100%;
+  justify-self: space-between;
+}
+
+.bin:hover{
+  color:purple;
+}
+
+.right{
+  height: 100%;
+  width: 49%;
+}
+
+mat-card{
+  width: 100%;
+  height: 100%;
+}
+
+
+#hist-age{
+  width: 100%;
+  height: 100%;
+}
+
+#performanceChart{
+  width: 100%;
+  height: 100%;
+}

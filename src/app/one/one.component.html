@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="left">
+    <div class="top">
+      <mat-card>
+        <div class="dets">
+          <h5 style="color: #4c7ace;font-size:18px;font-weight:500;margin-left:1rem">Employees: {{employees  }}</h5>
+          <hr width="60%" style="border: 0.5px solid #4c7ace; margin: 5px 0">
+          <p style="font-size:16px;color: #6495ED;margin-top:5px" *ngFor="let item of deptData">{{item.name}}: {{item.total}}</p>
+        </div>
+        <div id="MFRchart" #MFRchart></div>
+      </mat-card>
+    </div>
+    <div class="bottom">
+      <mat-card>
+        <div id="hist-age" #ageChart></div>
+      </mat-card>
+    </div>
+  </div>
+  <div class="right">
+    <mat-card>
+      <div id="performanceChart" #performanceChart></div>
+    </mat-card>
+  </div>
+</div>

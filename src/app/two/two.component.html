@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="leftcon">
+    <mat-card>
+      <div class="wrapper" #chart></div>
+    </mat-card>
+  </div>
+  <div class="rigcon">
+    <div class="contcon">
+    <div class="cont">
+      <mat-card style="color: #6495ED;">
+        <p style="font-weight:500; color: #4c7ace;text-align:center">TEAM OF THE MONTH</p>
+        <hr width="100%" style="border: 0.5px solid #4c7ace;margin: 3px 0">
+        <p style="font-size:14px;margin: 5px 0 0 12px;">TEAM:  {{TOM.name}}</p>
+        <p style="font-size:12px;margin: 5px 0 0 12px;">CUMULATIVE PERFORMANCE:  {{TOM.performance | number:'1.2-2'}}/10</p>
+      </mat-card>
+      <mat-card style="color: #6495ED;font-size:16px;">
+        <p style="font-weight:500; color: #4c7ace;text-align:center">SALARY DETAILS</p>
+        <hr width="100%" style="border: 0.5px solid #4c7ace;margin: 3px 0">
+        <p style="font-size:14px;margin: 0px 0 0 12px;">HIGHEST SALARY PAID:  {{salary[1]}} L</p>
+        <p style="font-size:14px;margin: 0px 0 0 12px;">LOWEST SALARY PAID:  {{salary[0]}} L</p>
+        <p style="font-size:14px;margin: 0px 0 0 12px;">MEAN SALARY PAID:  {{salary[2]}} L </p>
+      </mat-card>
+    </div>
+    <div class="cont">
+      <mat-card style="color: #6495ED;">
+        <p style="font-weight:500; color: #4c7ace;text-align:center">EMPLOYEE OF THE MONTH</p>
+        <hr width="100%" style="border: 0.5px solid #4c7ace;margin: 3px 0">
+        <p style="font-size:14px;margin: 5px 0 0 12px;">EMPLOYEE:  {{EOM.name}}</p>
+        <p style="font-size:14px;margin: 5px 0 0 12px;">PERFORMANCE:  {{EOM.performance | number:'1.2-2'}}/10</p>
+      </mat-card>
+      <mat-card style="color: #6495ED;">
+        <p style="font-weight:500; color: #4c7ace;text-align:center">NATIONALITY</p>
+        <hr width="100%" style="border: 0.5px solid #4c7ace;margin: 3px 0">
+        <p style="font-size:14px;margin: 5px 0 0 12px;">INDIAN NATIONALS: {{nationality.indians}}</p>
+        <p style="font-size:14px;margin: 5px 0 0 12px;">FORIEGN NATIONALS: {{nationality.foriegn}}</p>
+      </mat-card>
+    </div>
+    </div>
+    <mat-card class="donutchart">
+      <div class="donut" #donut></div>
+    </mat-card>
+  </div>
+</div>
